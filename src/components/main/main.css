@@ -1,0 +1,113 @@
+.main-container {
+    padding: 0px 0px 0px 2%;
+  position: relative;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-wrap {
+  margin-top: 30px;
+}
+
+.title-wrap .title {
+  width: 596px;
+  height: 82px;
+  left: 53px;
+  top: 261px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 82px;
+
+  color: #04474a;
+}
+
+.title-wrap .subTitle {
+  width: 452px;
+  height: 55px;
+  left: 53px;
+  top: 349px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  color: #009942;
+}
+
+.enter-code-text {
+  width: 558px;
+  height: 82px;
+  left: 53px;
+  top: 468px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 41px;
+
+  color: #415aa6;
+}
+
+.main-wrapper form .code-input-wrap {
+  width: 536px;
+  height: 100px;
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.code-input-wrap .code-input {
+  width: 30px;
+  height: 68px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 68px;
+
+  color: #000000;
+}
+
+.main-wrapper form button {
+  width: 422px;
+  height: 72px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+
+  background: linear-gradient(351.34deg, #d82300 6.95%, #d82300 93.76%);
+  box-shadow: 0px 0px 8px rgba(130, 58, 58, 0.4);
+  border-radius: 15px;
+  font-size: 30px;
+  color: white;
+}
+
+.img-wrap {
+  position: absolute;
+  max-width:863.26px ;
+  width: 100%;
+  right: 0;
+  top: -167px;
+}
+
+
+@media (max-width: 1115px){
+  .img-wrap{
+    display: none;
+
+  }
+
+  .main-wrapper{
+    justify-content: center;
+  }
+}
