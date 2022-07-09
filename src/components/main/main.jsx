@@ -26,8 +26,9 @@ const Main = () => {
 
     const handleError = (e) =>{
         e.preventDefault()
-        if(error === false){
-            setError(true)
+        if(OTP !== "pomo"){
+          setError(true)
+            setTimeout(()=> setError(false), 3300);
         }
         setOTP("")
     }
