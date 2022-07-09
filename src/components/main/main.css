@@ -76,6 +76,14 @@
 .toz {
   border: 1px solid red;
   outline: #009942;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  border: 1px solid #eeeeee;
+  outline: none;
+  color: #000000;
+  margin-top: 10px;
 }
 
 .main-wrapper form button {
