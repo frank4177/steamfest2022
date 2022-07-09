@@ -45,6 +45,7 @@
   width: 50px;
   height: 100px;
   margin-top: 20px;
+  display: flex;
 }
 
 .code-input {
@@ -60,9 +61,6 @@
  height: 60px;
 }
 
-.code-input:focus{
-  
-}
 
 .toz {
   border: 1px solid red;
@@ -129,8 +127,40 @@
     justify-content: center;
   }
 
+  .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+  }
+  
+  .title-wrap {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enter-code-text{
+    text-align: center;
+    line-height: 55px;
+  }
+
   .main-wrapper form button{
     margin-left: unset;
+  }
+
+  .main-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .code-input-wrap{
+    justify-content: center;
   }
 
   .code-input {
@@ -159,6 +189,7 @@
 
 @media (max-width: 530px) {
 
+
   .img-wrap {
     display: none;
   }
@@ -169,17 +200,27 @@
   }
 
   .main-container {
-    padding: 0px 0px 0px 3%;
+    padding: 0 3%;
     position: relative;
   }
   
   .main-wrapper {
     display: flex;
-    justify-content: space-between;
+  }
+
+  .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .title-wrap {
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .title-wrap .title {
@@ -201,6 +242,8 @@
     font-weight: 800;
     font-size: 22px;
     color: #415aa6;
+    text-align: center;
+    line-height: 41px;
   }
   
   .main-wrapper form .code-input-wrap {
@@ -230,6 +273,18 @@
     margin-top: 10px;
   }
 
+  .main-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .code-input-wrap{
+    justify-content: center;
+    align-items: center;
+  }
+
   .main-wrapper form button{
     margin-left: unset;
     width: 280px;
@@ -237,19 +292,40 @@
     font-size: 25px;
   
 }
-
+}
 
 
 
 @media (max-width: 380px) {
 
+  .title-wrap .title{
+    font-size: 33px;
+  }
+
   .enter-code-text {
     font-family: "Nunito";
     font-style: normal;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 18px;
     color: #415aa6;
   }
 
+  .main-wrapper form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .code-input-wrap{
+    justify-content: center;
+    display: unset;
+    align-items: center;
+  }
+
+  .button-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
  }
-}

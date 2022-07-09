@@ -38,7 +38,9 @@ const Main = () => {
                 </div>
                 {error ? <div className='error'><BsFillShieldFill/> Error: Wrong code</div> : null}
 
-                <button type='submit' onClick={handleError}>Start <BsArrowRight/></button>  
+                <div className='button-wrap'>
+                <button type='submit' onClick={handleError}>Start <BsArrowRight/></button> 
+                </div> 
               </form>
 
             </div>
@@ -52,15 +54,3 @@ const Main = () => {
 }
 
 export default Main;
-
-
-// <form action="">
-//                     <div className='code-input-wrap'>
-//                     <input type="text" maxLength='1' className='code-input'/>
-//                     <input type="text" maxLength='1'  className='code-input'/>
-//                     <input type="text" maxLength='1'  className='code-input'/>
-//                     <input type="text" maxLength='1'  className='code-input'/>
-//                     </div>
-//                 <button type='submit'>start <BsArrowRight/></button>  
-//                 </form>
-//             </div>
