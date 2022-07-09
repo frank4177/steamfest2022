@@ -7,10 +7,3 @@ body{
     height: 100%;
 
 }
-
-@media (max-width: 530px) {
-    body{
-    background: linear-gradient(90deg, rgba(65,186,196,1) 0%, rgba(13,255,187,1) 54%, rgba(43,214,228,1) 100%);
-
-    }
-}

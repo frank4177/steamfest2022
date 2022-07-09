@@ -18,5 +18,9 @@
     .navbar-wrapper{
         justify-content: center;
     }
+
+    .hr{
+       border-color: #41C2C4;
+    }
 }
 

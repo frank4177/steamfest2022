@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className='navbar-wrapper'>
         <img src={Homepage_logo} alt="" />
       </div>
-      <hr />
+      <hr className='hr' />
     </div>
   )
 }

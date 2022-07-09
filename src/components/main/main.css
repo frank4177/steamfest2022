@@ -51,13 +51,17 @@
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 35px;
   border: 1px solid #eeeeee;
   outline: none;
   color: #000000;
   margin-top: 10px;
  background-color: #EEEEEE;
  height: 60px;
+}
+
+.code-input:focus{
+  
 }
 
 .toz {
