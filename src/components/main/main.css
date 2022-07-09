@@ -59,7 +59,7 @@
 }
 
 
-.toz {
+.otp {
   border: 1px solid red;
   outline: #009942;
   font-family: "Nunito";
@@ -69,7 +69,7 @@
   outline: none;
   color: #000000;
   margin-top: 10px;
-  height: 68px;
+  height: 60px;
   
   animation: shake 0.42s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
@@ -199,7 +199,7 @@
     height: "58px"
   }
   
-  .toz {
+  .otp {
     border: 1px solid red;
     outline: #009942;
     font-family: "Nunito";
@@ -281,7 +281,7 @@
     height: "58px"
   }
   
-  .toz {
+  .otp {
     border: 1px solid red;
     outline: #009942;
     font-family: "Nunito";

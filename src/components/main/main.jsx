@@ -53,7 +53,7 @@ const Main = () => {
                 <div className='enter-code-text'>Enter your steamfest code to join and <br /> win exciting prizes!</div>
                 <form action="">
                 <div className='code-input-wrap'>
-                <OTPInput value={OTP} onChange={setOTP} autoFocus OTPLength={5} otpType="number" disabled={false} inputClassName={error ? "toz" : "code-input"}   inputStyles={{height: "55px"}} />
+                <OTPInput value={OTP} onChange={setOTP} autoFocus OTPLength={5} otpType="number" disabled={false} inputClassName={error ? "otp" : "code-input"}   inputStyles={{height: "55px"}} />
                 </div>
                 {error ? <div className='error'><BsFillShieldFill/> Error: Wrong code</div> : null}
 
