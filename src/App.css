@@ -7,3 +7,10 @@ body{
     height: 100%;
 
 }
+
+@media (max-width: 1115px) {
+    body{
+        background-color: #f1fcfc;
+
+    }
+}
