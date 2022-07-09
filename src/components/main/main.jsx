@@ -31,7 +31,7 @@ const Main = () => {
                 <div className='subTitle'>Great prizes to be won</div>
                 </div>
                 
-                <div className='enter-code-text'>Enter your steamfest code to join and <br /> exciting prizes!</div>
+                <div className='enter-code-text'>Enter your steamfest code to join and <br /> win exciting prizes!</div>
                 <form action="">
                 <div className='code-input-wrap'>
                 <OTPInput value={OTP} onChange={setOTP} autoFocus OTPLength={5} otpType="number" disabled={false} inputClassName={error ? "toz" : "code-input"}   inputStyles={{height: "55px"}} />
