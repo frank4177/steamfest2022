@@ -3,13 +3,26 @@ import './main.css'
 import Homepage_image from '../../asset/Homepage_image.png';
 import {BsArrowRight, BsFillShieldFill} from 'react-icons/bs'
 import OTPInput, { ResendOTP } from "otp-input-react";
+import { motion} from "framer-motion";
 import { useEffect } from 'react';
 
 
 const Main = () => {
     const [OTP, setOTP] = useState("");
-
     const [error, setError] = useState(false);
+
+    const animation = {
+        offscreen: { opacity: 0, y: 25 },
+        onscreen: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            type: "spring",
+            restSpeed: 0.5,
+            duration: 2,
+          },
+        },
+      };
 
     const handleError = (e) =>{
         e.preventDefault()
@@ -24,8 +37,14 @@ const Main = () => {
   return (
     <div className='main-container'>
         <div className='main-wrapper'>
-            <div >
-                <div className='left'>
+            <div>
+                <motion.div className='left'
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ staggerChildren: 0.5 }}
+                variants={animation}>
+
                 <div className='title-wrap'>
                 <div className='title'>Steamfest 2022 Quiz</div>
                 <div className='subTitle'>Great prizes to be won</div>
@@ -43,7 +62,7 @@ const Main = () => {
                 </div> 
               </form>
 
-            </div>
+            </motion.div>
             <div className='right'>
                 <img className='img-wrap' src={Homepage_image} alt="home image" />
             </div>
