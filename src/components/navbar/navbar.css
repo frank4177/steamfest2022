@@ -1,17 +1,14 @@
 
 
 .navbar-wrapper{
-    padding: 0px 2%;
+    padding: 0px 3%;
     height: 137px;
-    padding-top: 10px;
+    
 }
 
 .navbar-wrapper img{
     max-width: 196px;
     max-height: 103px;
+    margin-top: 20px;
 }
 
-.left{
-    max-width: 300px;
-    width: 100%;
-}
