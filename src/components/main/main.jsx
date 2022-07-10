@@ -73,9 +73,10 @@ const Main = () => {
                         e.target.maxLength
                       );
                   }}
+                  autoFocus={true}
                   maxLength="1"
                   className={error ? "otp" : "code-input"}
-                  inputStyles={{ height: "55px" }}
+                  
                   onChange={(e) => setErr(e.target.value)}
                   value={err}
                 />
@@ -91,7 +92,7 @@ const Main = () => {
                   }}
                   maxLength="1"
                   className={error ? "otp" : "code-input"}
-                  inputStyles={{ height: "55px" }}
+                  
                   onChange={(e) => setErr1(e.target.value)}
                   value={err1}
                 />
@@ -107,7 +108,7 @@ const Main = () => {
                   }}
                   maxLength="1"
                   className={error ? "otp" : "code-input"}
-                  inputStyles={{ height: "55px" }}
+                  
                   onChange={(e) => setErr2(e.target.value)}
                   value={err2}
                 />
@@ -123,7 +124,7 @@ const Main = () => {
                   }}
                   maxLength="1"
                   className={error ? "otp" : "code-input"}
-                  inputStyles={{ height: "55px" }}
+                  
                   onChange={(e) => setErr3(e.target.value)}
                   value={err3}
                 />
@@ -139,7 +140,7 @@ const Main = () => {
                   }}
                   maxLength="1"
                   className={error ? "otp" : "code-input"}
-                  inputStyles={{ height: "55px" }}
+                  
                   onChange={(e) => setErr4(e.target.value)}
                   value={err4}
                 />

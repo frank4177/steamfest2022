@@ -14,7 +14,7 @@
 }
 
 
-@media (max-width: 1115px) {
+@media (max-width: 705px) {
     .navbar-wrapper{
         justify-content: center;
     }
