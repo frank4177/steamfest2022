@@ -10,6 +10,12 @@ import { useEffect } from 'react';
 const Main = () => {
     const [OTP, setOTP] = useState("");
     const [error, setError] = useState(false);
+    const [err, setErr] = useState("");
+    const [err1, setErr1] = useState("");
+    const [err2, setErr2] = useState("");
+    const [err3, setErr3] = useState("");
+    const [err4, setErr4] = useState("");
+
 
     const animation = {
         offscreen: { opacity: 0, y: 25 },
@@ -26,12 +32,18 @@ const Main = () => {
 
     const handleError = (e) =>{
         e.preventDefault()
-        if(OTP !== "pomo"){
+        if(error !== "pomo"){
           setError(true)
             setTimeout(()=> setError(false), 3300);
-        }
-        setOTP("")
+        } else setError(true)
+        setErr("")
+        setErr1("")
+        setErr2("")
+        setErr3("")
+        setErr4("")
+        
     }
+
     
 
 
@@ -52,14 +64,20 @@ const Main = () => {
                 </div>
                 
                 <div className='enter-code-text'>Enter your steamfest code to join and <br /> win exciting prizes!</div>
-                <form action="">
+                <form >
                 <div className='code-input-wrap'>
-                <OTPInput value={OTP} onChange={setOTP} autoFocus OTPLength={5} otpType="number" disabled={false} inputClassName={error ? "otp" : "code-input"}   inputStyles={{height: "55px"}} />
+                    <input type="text" maxLength='1' className={error ? "otp" : "code-input"} inputStyles={{height: "55px"}} onChange={(e)=> setErr(e.target.value)} value={err}/>
+                    <input type="text" maxLength='1'  className={error ? "otp" : "code-input"} inputStyles={{height: "55px"}} onChange={(e)=> setErr1(e.target.value)} value={err1}/>
+                    <input type="text" maxLength='1'  className={error ? "otp" : "code-input"} inputStyles={{height: "55px"}} onChange={(e)=> setErr2(e.target.value)} value={err2}/>
+                    <input type="text" maxLength='1'  className={error ? "otp" : "code-input"} inputStyles={{height: "55px"}} onChange={(e)=> setErr3(e.target.value)} value={err3}/>
+                    <input type="text" maxLength='1'  className={error ? "otp" : "code-input"} inputStyles={{height: "55px"}} onChange={(e)=> setErr4(e.target.value)} value={err4}/>
                 </div>
-                {error ? <div className='error'><BsFillShieldFill/> Error: Wrong code</div> : null}
 
+                {error ? <div className='error'><BsFillShieldFill/> Error: Wrong code</div> : null}
                 <div className='button-wrap'>
-                <button type='submit' onClick={handleError}>Start <BsArrowRight/></button> 
+                <button onClick={handleError}>Start <BsArrowRight/></button> 
+                
+                
                 </div> 
               </form>
 
