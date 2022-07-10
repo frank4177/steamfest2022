@@ -40,6 +40,7 @@ const Main = () => {
     setErr3("");
     setErr4("");
   };
+  
 
   return (
     <div className="main-container">
@@ -66,6 +67,7 @@ const Main = () => {
                 <input
                   type="number"
                   name="pincode"
+                  onKeyDown={(evt) => ["e", "E", "+", "-", "."].includes(evt.key) && evt.preventDefault()}
                   onInput={(e) => {
                     if (e.target.value.length > e.target.maxLength)
                       e.target.value = e.target.value.slice(
@@ -74,15 +76,15 @@ const Main = () => {
                       );
                   }}
                   autoFocus={true}
-                  maxLength="1"
+                  maxLength={1}
                   className={error ? "otp" : "code-input"}
-                  
                   onChange={(e) => setErr(e.target.value)}
                   value={err}
                 />
                 <input
                   type="number"
                   name="pincode"
+                  onKeyDown={(evt) => ["e", "E", "+", "-", "."].includes(evt.key) && evt.preventDefault()}
                   onInput={(e) => {
                     if (e.target.value.length > e.target.maxLength)
                       e.target.value = e.target.value.slice(
@@ -99,6 +101,7 @@ const Main = () => {
                 <input
                   type="number"
                   name="pincode"
+                  onKeyDown={(evt) => ["e", "E", "+", "-", "."].includes(evt.key) && evt.preventDefault()}
                   onInput={(e) => {
                     if (e.target.value.length > e.target.maxLength)
                       e.target.value = e.target.value.slice(
@@ -122,6 +125,8 @@ const Main = () => {
                         e.target.maxLength
                       );
                   }}
+                  onKeyDown={(evt) => ["e", "E", "+", "-", "."].includes(evt.key) && evt.preventDefault()}
+
                   maxLength="1"
                   className={error ? "otp" : "code-input"}
                   
@@ -138,6 +143,8 @@ const Main = () => {
                         e.target.maxLength
                       );
                   }}
+                  onKeyDown={(evt) => ["e", "E", "+", "-", "."].includes(evt.key) && evt.preventDefault()}
+
                   maxLength="1"
                   className={error ? "otp" : "code-input"}
                   
