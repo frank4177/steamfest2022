@@ -54,26 +54,27 @@ const Main = () => {
             transition={{ staggerChildren: 0.5 }}
             variants={animation}
           >
-            <div className="title-wrap">
+            <div className="text-wrap">
               <div className="title">Steamfest 2022 Quiz</div>
               <div className="subTitle">Great prizes to be won</div>
-            </div>
-
-            <div className="enter-code-text">
+              <div className="enter-code-text">
               Enter your steamfest code to join and <br /> win exciting prizes!
             </div>
+            </div>
+            
             <form>
               <div className="code-input-wrap">
                 <input
                   type="number"
                   name="pincode"
-                  onKeyDown={(evt) => ["e", "E", "+", "-", "."].includes(evt.key) && evt.preventDefault()}
                   onInput={(e) => {
+                    
                     if (e.target.value.length > e.target.maxLength)
                       e.target.value = e.target.value.slice(
                         0,
                         e.target.maxLength
                       );
+
                   }}
                   autoFocus={true}
                   maxLength={1}
@@ -133,7 +134,7 @@ const Main = () => {
                   onChange={(e) => setErr3(e.target.value)}
                   value={err3}
                 />
-                <input
+               <input
                   type="number"
                   name="pincode"
                   onInput={(e) => {

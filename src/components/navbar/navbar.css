@@ -4,6 +4,7 @@
     padding: 0px 3%;
     height: 137px;
     display: flex;
+    margin-top: 30px;
     
 }
 
@@ -13,14 +14,17 @@
     margin-top: 20px;
 }
 
+@media (max-width: 810px) {
+    .navbar-wrapper{
+        margin-top: unset;
+    }
+}
+
+
 
 @media (max-width: 705px) {
     .navbar-wrapper{
         justify-content: center;
-    }
-
-    .hr{
-       border-color: #41C2C4;
     }
 }
 
