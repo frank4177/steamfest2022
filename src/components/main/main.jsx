@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./main.css";
-import Homepage_image from "../../asset/Homepage_image.png";
+import Homepage_image from "../../asset/homepage_images/Group_73.png";
 import { BsArrowRight, BsFillShieldFill } from "react-icons/bs";
 import OTPInput, { ResendOTP } from "otp-input-react";
 import { motion } from "framer-motion";

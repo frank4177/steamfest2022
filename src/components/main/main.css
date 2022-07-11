@@ -13,7 +13,7 @@
 }
 
 .text-wrap {
-  margin-top: 10px;
+  margin-top: 7px;
   text-align: center;
 }
 
@@ -22,7 +22,7 @@
   font-style: normal;
   font-weight: 800;
   font-size: 35px;
-  line-height: 40px;
+  line-height: 35px;
   color: #04474a;
   text-align: center;
 }
@@ -31,8 +31,8 @@
   font-family: Nunito Extra Bold 009942;
   font-style: normal;
   font-weight: 800;
-  font-size: 30px;
-  line-height: 55px;
+  font-size: 27px;
+  line-height: 50px;
   color: #009942;
   text-align: center;
 }
@@ -41,8 +41,8 @@
   font-family: Nunito Extra Bold 415AA6;
   font-style: normal;
   font-weight: 800;
-  font-size: 20px;
-  line-height: 41px;
+  font-size: 18px;
+  line-height: 33px;
   color: #415aa6;
 }
 
@@ -57,13 +57,13 @@
   
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 30px;
   border: 1px solid #eeeeee;
   outline: none;
   color: #000000;
-  margin-top: 10px;
+  margin-top: 7px;
   background-color: #eeeeee;
-  height: 50px;
+  height: 45px;
   text-align: center;
   width: 40px;
 }
@@ -77,8 +77,8 @@
   font-size: 35px;
   outline: none;
   color: #000000;
-  margin-top: 10px;
-  height: 50px;
+  margin-top: 7px;
+  height: 45px;
   width: 40px;
   text-align: center;
 
@@ -124,8 +124,8 @@
 }
 
 .main-wrapper form button {
-  width: 350px;
-  height: 50px;
+  width: 340px;
+  height: 45px;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -133,9 +133,9 @@
   background: linear-gradient(351.34deg, #d82300 6.95%, #d82300 93.76%);
   box-shadow: 0px 0px 8px rgba(130, 58, 58, 0.4);
   border-radius: 15px;
-  font-size: 27px;
+  font-size: 22px;
   color: white;
-  margin-top: 20px;
+  margin-top: 25px;
   border: none;
 }
 
@@ -156,7 +156,7 @@
   font-weight: bold;
   gap: 10px;
   color: crimson;
-  margin-top: 18px;
+  margin-top: 10px;
 }
 
 
@@ -172,10 +172,6 @@
     width: 480px;
   }
 
-  .text-wrap {
-    margin-top: 10px;
-  }
-
   .text-wrap .title {
     font-style: normal;
     font-weight: 800;
@@ -188,7 +184,6 @@
     font-style: normal;
     font-weight: 800;
     font-size: 25px;
-    line-height: 55px;
     color: #009942;
   }
 
@@ -196,7 +191,6 @@
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 41px;
     color: #415aa6;
   }
 
@@ -213,7 +207,6 @@
   .otp {
     border: 1px solid red;
     outline: #009942;
-    font-family: "Nunito";
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -266,13 +259,11 @@
     font-style: normal;
     font-weight: 800;
     font-size: 35px;
-    line-height: 50px;
     color: #04474a;
   }
 
   .text-wrap .subTitle {
     font-size: 25px;
-    line-height: 55px;
     
   }
 
@@ -281,7 +272,6 @@
     font-size: 20px;
     color: #415aa6;
     text-align: center;
-    line-height: 41px;
     
   }
 
@@ -307,7 +297,6 @@
   .main-wrapper form button {
     margin-left: unset;
     width: 280px;
-    height: 45px;
     font-size: 25px;
   }
 }
