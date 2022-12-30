@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/steamfest2022/static/css/main.42371fe4.css",
+    "main.js": "/steamfest2022/static/js/main.40dc2884.js",
+    "static/js/787.9ccc6037.chunk.js": "/steamfest2022/static/js/787.9ccc6037.chunk.js",
+    "static/media/Group_73.png": "/steamfest2022/static/media/Group_73.70ddd57acc172c20798b.png",
+    "static/media/Homepage_logo.png": "/steamfest2022/static/media/Homepage_logo.859c255a142a9f88e43c.png",
+    "index.html": "/steamfest2022/index.html",
+    "main.42371fe4.css.map": "/steamfest2022/static/css/main.42371fe4.css.map",
+    "main.40dc2884.js.map": "/steamfest2022/static/js/main.40dc2884.js.map",
+    "787.9ccc6037.chunk.js.map": "/steamfest2022/static/js/787.9ccc6037.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42371fe4.css",
+    "static/js/main.40dc2884.js"
+  ]
+}
