@@ -1,5 +1,6 @@
 {
   "name": "steamfest",
+  "homepage":"https://frank4177.github.io/steamfest2022/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
